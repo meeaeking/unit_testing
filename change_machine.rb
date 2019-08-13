@@ -2,7 +2,7 @@ require 'rspec'
 class ChangeMachine
   def change(cents)
     coins = []
-    while cents > 0 && cents < 5
+    while cents > 0
       coins << 1
       cents -= 1
     end
